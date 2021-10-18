@@ -1,0 +1,142 @@
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    background-color: #1e1e1c;
+}
+
+.footer-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/******************* FOOTER-TOP **************/
+
+/******************* FOOTER-TOP **************/
+
+/******************* FOOTER-TOP **************/
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-row {
+    text-align: center;
+}
+
+.footer-row h3 {
+    font-size: 1.7rem;
+    margin: 5% 0;
+    color: #c4a562
+}
+
+.footer-row-1 {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    color: #c4a562;
+    text-decoration: none;
+    border-radius: 100%;
+    border: #c4a562 solid 2px;
+    padding: 12px;
+    margin: 0 10px;
+    transition: 0.3s
+}
+
+.fa:hover {
+    color: black;
+    border: #c99728 solid 2px;
+    background-color: #c99728;
+}
+
+.footer-row-2 {
+    flex: 1
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-col {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%
+}
+
+.input-col input {
+    width: 82%;
+    color: black
+}
+
+.input-col-3 input {
+    height: 150px;
+}
+
+.input-col-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-col-4 button {
+    width: 150px;
+    padding: 1%;
+    margin: 3% 5%;
+    border: solid #c4a562 3px;
+    transition: 0.5s;
+    color: #1e1e1c;
+}
+
+.input-col-4 button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    color: #1e1e1c;
+    font-weight: bold;
+}
+
+.footer-row-3 {
+    width: 25%;
+}
+
+/******************* FOOTER-BOTTOM **************/
+
+/******************* FOOTER-BOTTOM **************/
+
+/******************* FOOTER-BOTTOM **************/
+
+.footer-bottom {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom div {
+    font-size: 0.8rem;
+}
