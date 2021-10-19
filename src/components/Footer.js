@@ -35,9 +35,7 @@ export default function Footer() {
                         <span>&#169; </span>
                         <span>Copyright 2021 AnywhereFitness | </span>
                         <span>1234 Somewhere, San Jose, CA, 95XXX | </span>
-                        <span>408-XXX-XXXX | </span>
-                        <span>Terms of Use | </span>
-                        <span>Privacy Policy</span>
+                        <span>408-XXX-XXXX</span>
                     </div>
                 </div>
             </div>

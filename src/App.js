@@ -1,8 +1,10 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
-import Header from './components/Header.js'
-import Footer from './components/Footer.js'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import Home from './components/Home'
+import Login from './components/Login'
+import Signup from './components/Signup'
 
 function App() {
   return (
@@ -22,15 +24,15 @@ function App() {
 
           </Route>
           <Route path='/login'>
-
+            <Login />
           </Route>
           <Route path='/logout'>
 
           </Route>
           <Route path='/signup'>
-
+            <Signup />
           </Route>
-          <Route path='/'>
+          <Route path='/' >
             <Home />
           </Route>
         </Switch>

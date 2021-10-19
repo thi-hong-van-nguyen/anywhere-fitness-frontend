@@ -1,17 +1,21 @@
 footer {
     width: 100%;
-    position: absolute;
-    z-index: 99;
+    height: 500px;
+    left: 0;
+    bottom: 0;
     background-color: #1e1e1c;
 }
 
 .footer-wrap {
-    width: 1200px;
+    max-width: 1200px;
+    height: 100%;
     margin: 0 auto;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #1e1e1c;
 }
 
 /******************* FOOTER-TOP **************/

@@ -1,22 +1,213 @@
 .home-wrap {
-    height: 100vh
+    position: relative;
+    width: 100%;
 }
 
-.video-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 1000px;
-    overflow: hidden;
+/*************** TOP ***********************/
+
+/*************** TOP ***********************/
+
+/*************** TOP ***********************/
+
+.home-top-wrap {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    /* border: purple solid 1px; */
 }
 
 video {
-    position: fixed;
+    position: absolute;
     right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    top: -40%;
+    width: 100%;
+    height: 1000px;
     transform: translateX(calc((100% - 100vw) / 2));
-    /* z-index: -1; */
+    filter: brightness(40%)
+}
+
+.home-top {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 1200px;
+    z-index: 99;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    text-shadow: -3px 3px 5px rgba(66, 68, 69, 0.7);
+}
+
+.home-top h1 {
+    font-size: 2rem;
+    padding-top: 10%
+}
+
+.home-top div {
+    font-size: 1.2rem;
+}
+
+.home-top a {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 15px;
+    border: #c99728 solid 2px;
+    padding: 1%;
+    transition: 0.5s
+}
+
+.home-top a:hover {
+    color: black;
+    background-color: #c4a562;
+    border: #c99728 solid 2px
+}
+
+/*************** MIDDLE ***********************/
+
+/*************** MIDDLE ***********************/
+
+/*************** MIDDLE ***********************/
+
+.home-middle-wrap {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* border: solid red 1px; */
+}
+
+.home-middle {
+    position: absolute;
+    max-width: 1200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 5%;
+}
+
+.arrow {
+    border: solid #c4a562;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    padding: 10px
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.home-middle h3 {
+    color: #c4a562;
+    padding: 1%;
+    font-size: 1.3rem
+}
+
+.home-middle div {
+    color: #c4a562;
+    padding: 1%;
+    font-size: 1.2rem;
+}
+
+.home-middle div:first-child {
+    padding-bottom: 30px
+}
+
+.home-middle div:nth-child(4) {
+    padding-top: 40px;
+}
+
+/*************** BOTTOM ***********************/
+
+/*************** BOTTOM ***********************/
+
+/*************** BOTTOM ***********************/
+
+.home-bottom-wrap {
+    width: 100%;
+    height: 800px;
+    border-bottom: dotted 5px rgba(64, 61, 55, 0.7);
+}
+
+.home-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+.bottom-row {
+    width: 48%;
+    height: 600px;
+    border: #c4a562 solid 6px;
+    border-radius: 25% 10%;
+    box-shadow: 0 0 5px rgba(240, 233, 218, 0.5);
+    overflow: hidden;
+}
+
+.bottom-row-img-1 {
+    background-image: url('../image3.jpg');
+}
+
+.bottom-row-img-2 {
+    background-image: url('../image2.jpg');
+}
+
+.bottom-row-img {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 10%;
+    filter: brightness(0.7);
+}
+
+.bottom-row-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.bottom-row-contents div {
+    padding: 0 5% 4% 5%;
+    line-height: 30px;
+}
+
+.bottom-row-contents div h3 {
+    font-size: 1.3rem;
+    padding-bottom: 2%;
+    color: #c4a562
+}
+
+.bottom-row-contents button {
+    width: 200px;
+    height: 30px;
+    color: black;
+    font-weight: bold;
+    border-radius: 18px;
+    border: dotted 3px #c4a562;
+    transition: 0.5s;
+    color: #c4a562;
+    background-color: #787265;
+}
+
+.bottom-row-contents button:hover {
+    background-color: #c4a562;
+    cursor: pointer;
+    color: black
 }
