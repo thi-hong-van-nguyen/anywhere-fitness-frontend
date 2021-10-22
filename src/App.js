@@ -11,6 +11,7 @@ import Classes from './components/Classes'
 import Bookings from './components/Bookings'
 import Logout from './components/Logout'
 import { loginStatus } from './actions'
+import PrivateRoute from './components/PrivateRoute'
 
 function App(props) {
   useEffect(() => {
@@ -31,9 +32,7 @@ function App(props) {
       <main id='main'>
         <Switch>
           <Route path='/classes' component={Classes} />
-          <Route path='/bookings'>
-            <Bookings />
-          </Route>
+          <PrivateRoute path='/bookings' component={Bookings} />
           <Route path='/login' component={Login} />
           <Route path='/logout' component={Logout} />
           <Route path='/signup' component={Signup} />

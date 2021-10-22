@@ -50,3 +50,37 @@ table {
     font-size: 1rem;
     color: #fff;
 }
+
+input, option, select {
+    color: black
+}
+
+button {
+    color: black
+}
+
+.modal {
+    /* position: absolute;
+    background-color: white;
+    border: red solid 1px;
+    width: 1200px;
+    height: 500px;
+    z-index: 99;
+    left: -100%;
+    top: 0 */
+    position: fixed;
+    margin: auto;
+    top: -20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 800px;
+    height: 300px;
+    background-color: white;
+    border: red solid 1px;
+    z-index: 99;
+}
+
+.modal div, .modal h3 {
+    color: black
+}

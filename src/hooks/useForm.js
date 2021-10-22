@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import * as yup from 'yup'
 
-export const useForm = (initialValues, initialErrors, schema, disabled) => {
+export const useForm = (initialValues, initialErrors, schema) => {
     const [formValues, setFormValues] = useState(initialValues)
     const [errors, setErrors] = useState(initialErrors)
-    const [isDisabled, setIsDisabled] = useState(disabled)
+    const [isDisabled, setIsDisabled] = useState(false)
 
     const validation = (name, value) => {
         yup.reach(schema, name)
@@ -24,6 +24,7 @@ export const useForm = (initialValues, initialErrors, schema, disabled) => {
         validation(name, valueToUse)
         setFormValues({ ...formValues, [name]: valueToUse })
     }
+
 
     return [formValues, errors, change, isDisabled]
 }

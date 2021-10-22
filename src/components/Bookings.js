@@ -1,10 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
+import { getBookings } from '../actions'
+import Booking from './Booking'
 
-export default function Bookings() {
+function Bookings(props) {
+    const username = localStorage.getItem('username')
+    useEffect(() => {
+        props.getBookings(username)
+    }, [])
+
     console.log('bookings renders')
     return (
-        <div>
-            bookings
+        <div className='bookings'>
+            <div className='bookings-wrap'>
+                <div>
+                    <h3>{username}&apos;s Class Reservations</h3>
+                    <div>Enjoy Your Classes Built With <i className="fa fa-heart"></i><i className="fa fa-heart"></i><i className="fa fa-heart"></i></div>
+                </div>
+                <div className='bookings-cards'>
+                    {props.bookings.map(booking => <Booking booking={booking} key={booking.booking_id} />)}
+                </div>
+            </div>
         </div>
     )
 }
+
+const mapStateToProps = state => {
+    return ({
+        login: state.login.login,
+        bookings: state.bookings.bookings
+    })
+}
+export default connect(mapStateToProps, { getBookings })(Bookings)

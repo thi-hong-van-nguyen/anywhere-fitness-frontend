@@ -1,0 +1,71 @@
+.classes {
+    width: 100%;
+    border-bottom: dotted 5px rgba(196, 165, 98, 0.7);
+}
+
+.classes-wrap {
+    max-width: 1200px;
+    padding: 7% 0 5% 0;
+    border: solid 1px white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.classes-wrap>* {
+    border: solid 1px white;
+}
+
+.classes-cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.classes-wrap div {
+    width: 100%;
+    text-align: center;
+}
+
+.classes-title h2 {
+    font-size: 2rem;
+}
+
+/***************** CLASS COMP ****************/
+
+/***************** CLASS COMP ****************/
+
+/***************** CLASS COMP ****************/
+
+.class-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.class-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.cl-row {
+    display: flex;
+}
+
+.edit-del {
+    position: relative;
+}
+
+/********************* CLASS FORM ****************/
+
+/********************* CLASS FORM ****************/
+
+/********************* CLASS FORM ****************/
+
+.addClass-btn {
+    color: black
+}
