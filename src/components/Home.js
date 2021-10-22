@@ -1,15 +1,14 @@
 import React from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import video from '../../src/video2.mp4'
 
 export default function Home() {
-    const { push } = useHistory()
 
     return (
         <div className='home-wrap'>
             <div className='home-top-wrap'>
                 {/* <div className='video-wrap'> */}
-                <video autoPlay muted loop playbackRate='5.0'>
+                <video autoPlay muted loop playbackrate='5.0'>
                     <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
@@ -63,7 +62,7 @@ export default function Home() {
                                     Join with a family member and save 10% on any functional fitness membership.
                                 </p>
                             </div>
-                            <button onClick={push('/')}>REGISTER MEMBER</button>
+                            <button >REGISTER MEMBER</button>
                         </div>
                     </div>
 
