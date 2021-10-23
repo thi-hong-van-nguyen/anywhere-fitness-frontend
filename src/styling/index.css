@@ -78,6 +78,7 @@ button {
     z-index: 99;
     border-radius: 18px;
     box-shadow: 0 0 5px rgba(240, 239, 236, 0.5);
+    border: solid 1px rgb(88, 87, 83);
     text-align: center;
     padding-top: 2%;
 }

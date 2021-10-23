@@ -25,7 +25,7 @@ export default function FooterForm() {
                 <button
                     className='btn'
                 >
-                    Send Message
+                    Send
                 </button>
                 <button
                     className='btn'

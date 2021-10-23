@@ -106,15 +106,14 @@
     background-color: #c4a562;
 }
 
-/* .nav-1 a::after, .nav-2 a::after, .nav-3 a::after {
-    content: '';
-    display: block;
-    width: 0%;
-    height: 3px;
-    background-color: white;
-    transition: 0.3s;
-}
+/*********************** SMALL DEVICES ************************/
 
-.nav-1 a:hover::after, .nav-2 a:hover::after, .nav-3 a:hover::after {
-    width: 100%;
-} */
+/*********************** SMALL DEVICES ************************/
+
+/*********************** SMALL DEVICES ************************/
+
+@media (max-width: 1100px) {
+    .App-header {
+        position: relative;
+    }
+}

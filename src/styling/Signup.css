@@ -9,7 +9,6 @@
     position: absolute;
     height: 900px;
     margin-top: 120px;
-    border-top: dotted 5px rgba(196, 165, 98, 0.7);
     border-bottom: dotted 5px rgba(196, 165, 98, 0.7);
 }
 
@@ -111,4 +110,23 @@
 .error {
     color: red;
     padding-bottom: 3%
+}
+
+/*********************** SMALL DEVICES ************************/
+
+/*********************** SMALL DEVICES ************************/
+
+/*********************** SMALL DEVICES ************************/
+
+@media (max-width: 1100px) {
+    .signup {
+        height: 700px;
+    }
+    .signup-wrap {
+        height: 700px;
+        margin-top: 50px;
+    }
+    .signup-form-wrap {
+        padding: 0;
+    }
 }

@@ -11,6 +11,7 @@ export default function Home() {
                     <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+                <div className='home-img'></div>
                 <div className='home-top'>
                     <h1>
                         WE OFFER BOTH HANDS-ON AND VIRTUAL CLASSES!
@@ -35,7 +36,7 @@ export default function Home() {
             </div>
             <div className='home-bottom-wrap'>
                 <div className='home-bottom'>
-                    <div className='bottom-row bottom-row-1'>
+                    <div className='bottom-row '>
                         <div className='bottom-row-img  bottom-row-img-1'></div>
                         <div className='bottom-row-contents'>
                             <div>
@@ -49,7 +50,7 @@ export default function Home() {
                             <button>LEARN MORE</button>
                         </div>
                     </div>
-                    <div className='bottom-row bottom-row-2'>
+                    <div className='bottom-row '>
                         <div className='bottom-row-img bottom-row-img-2'></div>
                         <div className='bottom-row-contents'>
                             <div>

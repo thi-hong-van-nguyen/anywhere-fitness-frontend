@@ -25,6 +25,10 @@ video {
     filter: brightness(40%)
 }
 
+.home-img {
+    display: none;
+}
+
 .home-top {
     position: absolute;
     top: 20%;
@@ -74,7 +78,6 @@ video {
     position: relative;
     width: 100%;
     height: 300px;
-    /* border: solid red 1px; */
 }
 
 .home-middle {
@@ -209,4 +212,70 @@ video {
     background-color: #c4a562;
     cursor: pointer;
     color: black
+}
+
+/*********************** SMALL DEVICES ************************/
+
+/*********************** SMALL DEVICES ************************/
+
+/*********************** SMALL DEVICES ************************/
+
+@media (max-width: 1100px) {
+    video {
+        display: none;
+    }
+    .home-top-wrap {
+        position: relative;
+        width: 100%;
+        height: 400px
+    }
+    .home-img {
+        display: block;
+        background-image: url('../image1.jpg');
+        width: 100%;
+        background-size: cover;
+        height: 400px;
+        padding-top: 120px;
+        filter: brightness(0.6)
+    }
+    .home-top {
+        position: relative;
+        top: -380px;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 1200px;
+        z-index: 99;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 50px;
+        text-shadow: -3px 3px 5px rgba(66, 68, 69, 0.7);
+    }
+    .home-top h1, .home-top div, .home-top a {
+        color: rgb(218, 225, 228)
+    }
+    .home-middle-wrap {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .home-bottom-wrap {
+        height: 500px;
+    }
+    .bottom-row {
+        height: 400px;
+    }
+    .bottom-row-img {
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    .bottom-row-contents div h3 {
+        padding-top: 10px
+    }
 }

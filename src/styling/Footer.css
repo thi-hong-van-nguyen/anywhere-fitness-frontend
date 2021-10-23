@@ -143,3 +143,20 @@ footer {
 .footer-bottom div {
     font-size: 0.8rem;
 }
+
+/*********************** SMALL DEVICES ************************/
+
+/*********************** SMALL DEVICES ************************/
+
+/*********************** SMALL DEVICES ************************/
+
+@media (max-width: 800px) {
+    .social-icons {
+        flex-direction: column;
+    }
+    .fa {
+        font-size: 1.8rem;
+        transition: 0.3s;
+        margin: 5px
+    }
+}
