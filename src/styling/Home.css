@@ -13,7 +13,6 @@
     position: relative;
     width: 100%;
     height: 700px;
-    /* border: purple solid 1px; */
 }
 
 video {
@@ -54,7 +53,7 @@ video {
     text-decoration: none;
     color: inherit;
     border-radius: 15px;
-    border: #c99728 solid 2px;
+    border: #c99728 solid 3px;
     padding: 1%;
     transition: 0.5s
 }
@@ -196,11 +195,11 @@ video {
 
 .bottom-row-contents button {
     width: 200px;
-    height: 30px;
+    height: 40px;
     color: black;
     font-weight: bold;
     border-radius: 18px;
-    border: dotted 3px #c4a562;
+    border: dotted 5px #c4a562;
     transition: 0.5s;
     color: #c4a562;
     background-color: #787265;

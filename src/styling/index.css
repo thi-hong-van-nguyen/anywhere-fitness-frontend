@@ -6,6 +6,7 @@
 @import 'Signup.css';
 @import 'Classes.css';
 @import 'Bookings.css';
+@import 'ClassForm.css';
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -43,7 +44,11 @@ table {
     border-spacing: 0;
 }
 
-/**** START  *******/
+/******************** START HERE **********************/
+
+/******************** START HERE **********************/
+
+/******************** START HERE **********************/
 
 * {
     box-sizing: border-box;
@@ -56,31 +61,79 @@ input, option, select {
 }
 
 button {
-    color: black
+    color: black;
+    margin: 2% 0
 }
 
 .modal {
-    /* position: absolute;
-    background-color: white;
-    border: red solid 1px;
-    width: 1200px;
-    height: 500px;
-    z-index: 99;
-    left: -100%;
-    top: 0 */
     position: fixed;
     margin: auto;
     top: -20%;
     right: 0;
     bottom: 0;
     left: 0;
-    max-width: 800px;
+    max-width: 1000px;
     height: 300px;
     background-color: white;
-    border: red solid 1px;
     z-index: 99;
+    border-radius: 18px;
+    box-shadow: 0 0 5px rgba(240, 239, 236, 0.5);
+    text-align: center;
+    padding-top: 2%;
 }
 
 .modal div, .modal h3 {
+    color: black;
+}
+
+.modal h3 {
+    font-size: 2.5rem;
+}
+
+.modal div {
+    font-size: 1.2rem;
+    margin: 3%;
+}
+
+.err {
+    color: red;
+    font-size: 0.8rem;
+    padding-top: 1%
+}
+
+/******************* buttons *********************/
+
+/******************* buttons *********************/
+
+/******************* buttons *********************/
+
+.btn {
+    border: #c4a562 solid 3px;
+    border-radius: 18px;
+    width: 150px;
+    height: 40px;
+    background-color: #1e1e1c;
+    color: white;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin: 10px 5px
+}
+
+.btn:hover {
+    border: #c99728 solid 3px;
+    cursor: pointer;
+    background-color: #c4a562;
+    color: black;
+    font-weight: bolder;
+}
+
+/************* Disabled buttons *************/
+
+/************* Disabled buttons *************/
+
+/************* Disabled buttons *************/
+
+.disabled {
+    background-color: rgba(115, 113, 110, 0.8);
     color: black
 }

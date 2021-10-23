@@ -109,12 +109,11 @@ footer {
 }
 
 .input-col-4 button {
-    width: 150px;
     padding: 1%;
     margin: 3% 5%;
     border: solid #c4a562 3px;
     transition: 0.5s;
-    color: #1e1e1c;
+    color: #fff;
 }
 
 .input-col-4 button:hover {

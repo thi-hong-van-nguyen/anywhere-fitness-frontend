@@ -21,7 +21,7 @@ function Classes(props) {
         localStorage.getItem('role') === 'instructor'
             && props.login === true
             ? <div className='add-class'>
-                <button
+                <button className='btn'
                     onClick={() => setDisplayClassForm(!displayClassForm)}
                 >add class
                 </button>
@@ -41,8 +41,6 @@ function Classes(props) {
 
                 {addClassBtn}
 
-
-
                 <div className='classes-cards'>
                     {props.classes.map(item =>
                         <ClassComp
@@ -50,7 +48,6 @@ function Classes(props) {
                             key={item.class_id}
                             setDisplayClassForm={setDisplayClassForm}
                             setClassToEdit={setClassToEdit}
-
                         />
                     )}
                 </div>

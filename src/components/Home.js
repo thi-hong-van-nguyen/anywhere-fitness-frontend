@@ -7,12 +7,10 @@ export default function Home() {
     return (
         <div className='home-wrap'>
             <div className='home-top-wrap'>
-                {/* <div className='video-wrap'> */}
                 <video autoPlay muted loop playbackrate='5.0'>
                     <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                {/* </div> */}
                 <div className='home-top'>
                     <h1>
                         WE OFFER BOTH HANDS-ON AND VIRTUAL CLASSES!

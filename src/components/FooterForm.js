@@ -23,12 +23,12 @@ export default function FooterForm() {
             </div>
             <div className='input-col input-col-4'>
                 <button
-                    className='question-form-submit-btn'
+                    className='btn'
                 >
                     Send Message
                 </button>
                 <button
-                    className='question-form-clear-btn'
+                    className='btn'
                 >
                     Clear
                 </button>

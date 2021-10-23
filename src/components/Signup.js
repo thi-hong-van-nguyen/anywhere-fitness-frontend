@@ -66,7 +66,7 @@ export default function Signup() {
                                 />
                             </label>
                         </div>
-                        <div className='error'>{errors.username}</div>
+                        <div className='err'>{errors.username}</div>
                         <div>
                             <label> Password:
                                 <br />
@@ -78,7 +78,7 @@ export default function Signup() {
                                 />
                             </label>
                         </div>
-                        <div className='error'>{errors.password}</div>
+                        <div className='err'>{errors.password}</div>
                         <div>
                             <label> Authentication code (for Instructor):
                                 <br />
@@ -105,7 +105,7 @@ export default function Signup() {
                                 <a href='#top'> Privacy policy</a>
                             </label>
                         </div>
-                        <div className='error'>{errors.term ? errors.term : err}</div>
+                        <div className='err'>{errors.term ? errors.term : err}</div>
                         <div>
                             <button
                                 className='signup-btn'

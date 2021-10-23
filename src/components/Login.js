@@ -61,7 +61,7 @@ function Login(props) {
                                 />
                             </label>
                         </div>
-                        <div className='error'>{errors.username}</div>
+                        <div className='err'>{errors.username}</div>
                         <div>
                             <label> Password:
                                 <br />
@@ -73,7 +73,7 @@ function Login(props) {
                                 />
                             </label>
                         </div>
-                        <div className='error'>{errors.password ? errors.password : err}</div>
+                        <div className='err'>{errors.password ? errors.password : err}</div>
                         <div>
                             <button
                                 className='login-btn'

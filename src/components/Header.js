@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 
 function Header(props) {
+    const isClient = props.login === true && localStorage.getItem('role') === 'client'
 
-    console.log('header renders')
     return (
         <header className="App-header">
             <div className='navigations'>
@@ -15,7 +15,7 @@ function Header(props) {
                 <div className='nav-links'>
                     <div className='nav nav-1'><Link to='/'>HOME</Link></div>
                     <div className='nav nav-2'><Link to='/classes'>CLASSES</Link></div>
-                    <div className='nav nav-3'><Link to='/bookings'>BOOKINGS</Link></div>
+                    {isClient ? <div className='nav nav-3'><Link to='/bookings'>BOOKINGS</Link></div> : <></>}
                     {props.login
                         ? <>
                             <div className='nav nav-4'><Link to='/logout'>LOG OUT</Link></div>

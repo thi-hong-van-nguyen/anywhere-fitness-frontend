@@ -84,12 +84,12 @@ function ClassForm(props) {
         setDisplayClassForm(false)
     }
 
-    console.log('form renders')
-
     return (
         <div className='class-form-wrap'>
+            <h2>create new class</h2>
             <form className='class-form'>
                 <label>Class type
+                    <br />
                     <input
                         name='class_type'
                         type='text'
@@ -98,6 +98,7 @@ function ClassForm(props) {
                     />
                 </label>
                 <label>Location
+                    <br />
                     <input
                         name='class_location'
                         type='text'
@@ -106,6 +107,7 @@ function ClassForm(props) {
                     />
                 </label>
                 <label>Date
+                    <br />
                     <input
                         name='class_date'
                         type='date'
@@ -114,6 +116,7 @@ function ClassForm(props) {
                     />
                 </label>
                 <label>Time
+                    <br />
                     <input
                         name='class_time'
                         type='time'
@@ -122,6 +125,7 @@ function ClassForm(props) {
                     />
                 </label>
                 <label>Duration (in minute)
+                    <br />
                     <input
                         name='class_duration'
                         type='number'
@@ -130,7 +134,9 @@ function ClassForm(props) {
                     />
                 </label>
                 <label>Intensity
+                    <br />
                     <select
+                        style={{ textAlign: 'center' }}
                         name='intensity_level'
                         value={classFormValues.intensity_level}
                         onChange={change}
@@ -146,31 +152,40 @@ function ClassForm(props) {
 
                     </select>
                 </label>
-                {classToEdit.class_id
-                    ? <button
-                        className='editClass-btn'
-                        disabled={disabled}
-                        onClick={edit}
-                    >
-                        Update class
-                    </button>
-                    : <button
-                        className='addClass-btn'
-                        disabled={disabled}
-                        onClick={add}
-                    >
-                        Add class
-                    </button>}
+                <div>
+                    {classToEdit.class_id
+                        ? <button
+                            className={disabled ? 'disabled btn' : 'btn'}
+                            disabled={disabled}
+                            onClick={edit}
+                        >
+                            Update class
+                        </button>
+                        : <button
+                            className={disabled ? 'disabled btn' : 'btn'}
+                            disabled={disabled}
+                            onClick={add}
+                        >
+                            Add class
+                        </button>}
 
-                <button
-                    className='cancel-btn'
-                    onClick={cancel}
-                >
-                    Cancel
-                </button>
-                {Object.values(errors).map((err, idx) => <div key={idx}>{err}</div>)}
-                {err ? <div>{err}</div> : <></>}
+                    <button
+                        className='btn'
+                        onClick={cancel}
+                    >
+                        Cancel
+                    </button>
+                    {Object.values(errors)
+                        .map((err, idx) =>
+                            <div
+                                className='err'
+                                key={idx}
+                            >{err}
+                            </div>
+                        )}
+                </div>
             </form>
+            <div>{err ? <div className='err'>{err}</div> : <></>}</div>
         </div>
     )
 }

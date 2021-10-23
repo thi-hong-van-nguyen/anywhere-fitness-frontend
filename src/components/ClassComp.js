@@ -6,6 +6,7 @@ import { axiosWithAuth } from '../utils/axiosWithAuth'
 import { getClasses } from '../actions'
 import Attendee from './Attendee'
 import Modal from './Modal'
+import HotLevel from './HotLevel'
 
 function ClassComp(props) {
     const {
@@ -62,14 +63,19 @@ function ClassComp(props) {
     const buttons =
         isInstructor
             ? <div className='edit-del-book'>
-                <button onClick={() => setModal(true)} className='del-btn'>Delete</button>
-                <button onClick={edit} className='edit-btn'>Edit</button>
-                {err ? <div>{err}</div> : <></>}
-                {modal && <Modal setModal={setModal} class_id={class_id} del={del} />}
+                <button className='btn' onClick={() => setModal(true)}>Delete</button>
+                <button className='btn' onClick={edit}>Edit</button>
+
+                {modal && <Modal
+                    setModal={setModal}
+                    id={class_id}
+                    handleYes={del}
+                    err={err}
+                />}
             </div>
             : <div className='edit-del-book'>
-                <button onClick={() => handleClick()}>Book now!</button>
-                {err ? <div>{err}</div> : <></>}
+                <button className='btn' onClick={() => handleClick()}>Book now!</button>
+                {err ? <div className='err'>{err}</div> : <></>}
             </div>
 
     return (
@@ -87,13 +93,9 @@ function ClassComp(props) {
                     <div>Location:</div>
                     <div>{class_location}</div>
                 </div>
-                <div className='cl-row cl-row-3'>
-                    <div>Date:</div>
-                    <div>{class_date}</div>
-                </div>
                 <div className='cl-row cl-row-4'>
                     <div>Time:</div>
-                    <div>{class_time}</div>
+                    <div>{class_date} @ {class_time}</div>
                 </div>
                 <div className='cl-row cl-row-5'>
                     <div>Duration:</div>
@@ -101,7 +103,9 @@ function ClassComp(props) {
                 </div>
                 <div className='cl-row cl-row-6'>
                     <div>Intensity Level:</div>
-                    <div>{intensity_level}/10</div>
+                    <div>{intensity_level}/10 <br />
+                        <span><HotLevel hotLevel={intensity_level} /></span>
+                    </div>
                 </div>
                 {isInstructor ? <div className='cl-row cl-row-7'>
                     <div>Attendees:</div>

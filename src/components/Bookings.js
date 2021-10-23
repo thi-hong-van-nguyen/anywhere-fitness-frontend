@@ -13,9 +13,13 @@ function Bookings(props) {
     return (
         <div className='bookings'>
             <div className='bookings-wrap'>
-                <div>
-                    <h3>{username}&apos;s Class Reservations</h3>
-                    <div>Enjoy Your Classes Built With <i className="fa fa-heart"></i><i className="fa fa-heart"></i><i className="fa fa-heart"></i></div>
+                <div className='bookings-title'>
+                    <h3><span>{username}</span>&apos;s Class Reservations</h3>
+                    <div>Enjoy Your Classes Built With
+                        <i className="fa fa-heart fa-booking" ></i>
+                        <i className="fa fa-heart fa-booking" ></i>
+                        <i className="fa fa-heart fa-booking" ></i>
+                    </div>
                 </div>
                 <div className='bookings-cards'>
                     {props.bookings.map(booking => <Booking booking={booking} key={booking.booking_id} />)}

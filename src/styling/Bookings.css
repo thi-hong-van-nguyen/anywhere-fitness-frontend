@@ -12,7 +12,6 @@
 .bookings-wrap {
     max-width: 1200px;
     padding: 7% 0 5% 0;
-    border: solid 1px white;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -20,15 +19,38 @@
     align-items: center;
 }
 
+.bookings-title {
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(146, 144, 140, 0.7);
+    padding: 1%;
+    line-height: 50px;
+}
+
+.bookings-title h3 {
+    font-size: 2.5rem;
+}
+
+.bookings-title h3 span {
+    color: #a0710c;
+    padding: 1%
+}
+
+.bookings-title div {
+    font-size: 1.2rem;
+}
+
+.fa-booking {
+    font-size: 1rem;
+    padding-left: 1%
+}
+
 .bookings-cards {
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    border: solid 1px red;
-}
-
-.bookings-cards>* {
-    border: white solid 1px
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /************* BOOKING ****************/
@@ -38,19 +60,50 @@
 /************* BOOKING ****************/
 
 .booking-card {
-    width: 50%;
+    width: 45%;
+    margin: 30px;
+    padding: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: dotted 5px rgba(196, 165, 98, 0.7);
+    border-radius: 18px;
 }
 
-.booking-col div:first-child {
-    width: 30%
+.booking-h3 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+    color: #ff9900;
+    text-transform: uppercase;
+}
+
+.booking-h3::before, .booking-h3::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin: 1%;
+    background-color: rgba(171, 167, 157, 0.7);
+}
+
+.booking-details {
+    width: 100%;
+    padding: 5%;
 }
 
 .booking-col {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    line-height: 30px;
+    border-bottom: solid 2px rgba(196, 165, 98, 0.1);
+    ;
+}
+
+.booking-col div:first-child {
+    width: 28%;
 }
