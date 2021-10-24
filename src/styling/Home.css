@@ -41,16 +41,16 @@ video {
     margin: 0 auto;
     text-align: center;
     line-height: 50px;
-    text-shadow: -3px 3px 5px rgba(66, 68, 69, 0.7);
+    text-shadow: -3px 3px 5px rgba(141, 143, 145, 0.7);
 }
 
 .home-top h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding-top: 10%
 }
 
 .home-top div {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .home-top a {
@@ -250,10 +250,9 @@ video {
         margin: 0 auto;
         text-align: center;
         line-height: 50px;
-        text-shadow: -3px 3px 5px rgba(66, 68, 69, 0.7);
     }
     .home-top h1, .home-top div, .home-top a {
-        color: rgb(218, 225, 228)
+        color: rgb(218, 225, 228);
     }
     .home-middle-wrap {
         position: relative;
